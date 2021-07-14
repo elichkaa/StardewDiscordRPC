@@ -1,0 +1,10 @@
+﻿{
+  "Name": "StardewDiscordRPC",
+  "Author": "elichka",
+  "Version": "1.0.0",
+  "Description": "Discord Rich Presence for StardewValley",
+  "UniqueID": "elichka.StardewDiscordRPC",
+  "EntryDll": "StardewDiscordRPC.dll",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": [ "Nexus:8348" ]
+}

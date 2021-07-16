@@ -1,0 +1,32 @@
+﻿{
+  "farms": [
+    {
+      "type": "standard",
+      "imageKey": "standard_farm"
+    },
+    {
+      "type": "riverland",
+      "imageKey": "riverland_farm"
+    },
+    {
+      "type": "forest",
+      "imageKey": "forest_farm"
+    },
+    {
+      "type": "hill-top",
+      "imageKey": "hill-top_farm"
+    },
+    {
+      "type": "wilderness",
+      "imageKey": "wilderness_farm"
+    },
+    {
+      "type": "four corners",
+      "imageKey": "four corners_farm"
+    },
+    {
+      "type": "beach",
+      "imageKey": "beach_farm"
+    }
+  ]
+}

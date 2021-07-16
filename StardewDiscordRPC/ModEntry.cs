@@ -1,8 +1,10 @@
 ﻿namespace StardewDiscordRPC
 {
-    using System;
+    using System.IO;
+    using System.Runtime.InteropServices;
     using DiscordRPC;
     using StardewModdingAPI;
+    using StardewValley;
 
     public class ModEntry : Mod
     {
@@ -12,6 +14,7 @@
          * Game1 - static
          * Context - static 
          * helper - events and stuff
+         * sdate 
          */
         #endregion
 
@@ -21,32 +24,28 @@
 
         public override void Entry(IModHelper helper)
         {
-            this.Initialize();
-        }
+            var invoker = new PresenceInvoker(rpcClient);
 
-        private void Initialize()
-        {
-            rpcClient = new DiscordRpcClient(applicationId);
-            rpcClient.RegisterUriScheme(steamId);
-
-            rpcClient.OnReady += (sender, e) =>
+            //core events
+            helper.Events.GameLoop.GameLaunched += (sender, args) => invoker.SetInitial();
+            helper.Events.GameLoop.ReturnedToTitle += (sender, args) => invoker.SetInitial();
+            helper.Events.GameLoop.SaveLoaded += (sender, args) =>
             {
-                Monitor.Log($"Connected to user {e.User.Username}");
+                var locations = Game1._locationLookup.Keys;
+                using (StreamWriter sw = File.CreateText("C:\\Users\\elidi\\Desktop\\locations.txt"))
+                {
+                    foreach (var location in locations)
+                    {
+                        sw.WriteLine(location);
+                    }
+                }
+                
+                invoker.SetLocationData("farms", Game1.getFarm().mapPath.ToString());
             };
 
-            rpcClient.Initialize();
-
-            rpcClient.SetPresence(new RichPresence()
-            {
-                Details = "In game",
-                State = "Just started playing",
-                Assets = new Assets()
-                {
-                    LargeImageKey = "stardew_icon",
-                    LargeImageText = "Stardew Valley best game",
-                    SmallImageKey = "chicken_small"
-                }
-            });
+            
+            //location
+            helper.Events.Player.Warped += (sender, args) => invoker.ChangeLocation(args);
         }
     }
 }

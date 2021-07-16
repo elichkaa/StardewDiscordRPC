@@ -1,0 +1,71 @@
+﻿{
+  "farms": [
+    {
+      "type": "Maps\\Farm",
+      "name": "Standard Farm",
+      "imageKey": "standard_farm"
+    },
+    {
+      "type": "Maps\\Farm_Fishing",
+      "name": "Riverland Farm",
+      "imageKey": "riverland_farm"
+    },
+    {
+      "type": "Maps\\Farm_Foraging",
+      "name": "Foraging Farm",
+      "imageKey": "foraging_farm"
+    },
+    {
+      "type": "Maps\\Farm_Mining",
+      "name": "Mining Farm",
+      "imageKey": "mining_farm"
+    },
+    {
+      "type": "Maps\\Farm_Combat",
+      "name": "Combat Farm",
+      "imageKey": "wilderness_farm"
+    },
+    {
+      "type": "Maps\\Farm_FourCorners",
+      "name": "Four Corners Farm",
+      "imageKey": "multiplayer_farm"
+    },
+    {
+      "type": "Maps\\Farm_Island",
+      "name": "Beach Farm",
+      "imageKey": "beach_farm"
+    }
+  ],
+  "other": [
+    {
+      "type": "AbandonedJojaMart",
+      "name": "Abandoned Joja Mart",
+      "imageKey": "abandoned_joja_mart"
+    },
+    {
+      "type": "AdventureGuild",
+      "name": "Adventure Guild",
+      "imageKey": "adventure_guild"
+    },
+    {
+      "type": "Alesia_WarpRoom",
+      "name": "Alesia's Warp Room",
+      "imageKey": "alesia_warp_room"
+    },
+    {
+      "type": "AndyHouse",
+      "name": "Andy's House",
+      "imageKey": "andy_house"
+    },
+    {
+      "type": "Backwoods",
+      "name": "Backwoods",
+      "imageKey": "backwoods"
+    },
+    {
+      "type": "BusStop",
+      "name": "Bus Stop",
+      "imageKey": "bus_stop"
+    }
+  ] 
+}

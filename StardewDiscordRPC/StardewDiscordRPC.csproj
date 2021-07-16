@@ -4,7 +4,7 @@
     <RootNamespace>StardewDiscordRPC</RootNamespace>
     <Version>1.0.0</Version>
     <TargetFramework>net452</TargetFramework>
-	<GamePath>C:\Games\Stardew Valley\Stardew.Valley.v1.4.5</GamePath>
+	<GamePath>C:\Games\STARDEW 1.5\Stardew Valley</GamePath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,8 +13,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="data\chat.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\locations.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\player.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="stardew_icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties data_4player_1json__JsonSchema="json" /></VisualStudio></ProjectExtensions>
 </Project>

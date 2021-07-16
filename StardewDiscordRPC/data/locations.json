@@ -50,7 +50,7 @@
     {
       "type": "Alesia_WarpRoom",
       "name": "Alesia's Warp Room",
-      "imageKey": "alesia_warp_room"
+      "imageKey": "alesia_warproom"
     },
     {
       "type": "AndyHouse",
@@ -58,14 +58,529 @@
       "imageKey": "andy_house"
     },
     {
+      "type": "AnimalShop",
+      "name": "Animal Shop",
+      "imageKey": "animal_shop"
+    },
+    {
+      "type": "Apples_WarpRoom",
+      "name": "Apple's Warp Room",
+      "imageKey": "apple_warproom"
+    },
+    {
+      "type": "ApplesRoom",
+      "name": "Apple's Room",
+      "imageKey": "apple_room"
+    },
+    {
+      "type": "ArchaeologyHouse",
+      "name": "Archaeology House",
+      "imageKey": "archaeology_house"
+    },
+    {
+      "type": "AuroraVineyard",
+      "name": "Aurora's Vineyard",
+      "imageKey": "aurora_vineyard"
+    },
+    {
+      "type": "AuroraVineyardPicture",
+      "name": "Aurora's Vineyard Picture",
+      "imageKey": "aurora_vineyard_picture"
+    },
+    {
       "type": "Backwoods",
       "name": "Backwoods",
       "imageKey": "backwoods"
     },
     {
+      "type": "Backwoods",
+      "name": "Backwoods",
+      "imageKey": "backwoods"
+    },
+    {
+      "type": "BathHouse_Entry",
+      "name": "Entry of BathHouse",
+      "imageKey": "bathhouse_entry"
+    },
+    {
+      "type": "BathHouse_MensLocker",
+      "name": "Men's Locker of BathHouse",
+      "imageKey": "bathhouse_menslocker"
+    },
+    {
+      "type": "BathHouse_Pool",
+      "name": "Pool of BathHouse",
+      "imageKey": "bathhouse_pool"
+    },
+    {
+      "type": "BathHouse_WomensLocker",
+      "name": "Women's Locker of BathHouse",
+      "imageKey": "bathhouse_womenslocker"
+    },
+    {
+      "type": "Beach",
+      "name": "Beach",
+      "imageKey": "beach"
+    },
+    {
+      "type": "BeachNightMarket",
+      "name": "Beach Night Market",
+      "imageKey": "beach_nightmarket"
+    },
+    {
+      "type": "Blacksmith",
+      "name": "Blacksmith",
+      "imageKey": "blacksmith"
+    },
+    {
+      "type": "BlueMoonVineyard",
+      "name": "Blue Moon Vineyard",
+      "imageKey": "blue_moon_vineyard"
+    },
+    {
+      "type": "BoatTunnel",
+      "name": "Boat Tunnel",
+      "imageKey": "boat_tunnel"
+    },
+    {
+      "type": "BugLand",
+      "name": "BugLand",
+      "imageKey": "bugland"
+    },
+    {
       "type": "BusStop",
       "name": "Bus Stop",
       "imageKey": "bus_stop"
+    },
+    {
+      "type": "Caldera",
+      "name": "Caldera",
+      "imageKey": "caldera"
+    },
+    {
+      "type": "Camilla_WarpRoom",
+      "name": "Camilla's WarpRoom",
+      "imageKey": "camilla_warproom"
+    },
+    {
+      "type": "Cellar",
+      "name": "Cellar",
+      "imageKey": "cellar"
+    },
+    {
+      "type": "Cellar2",
+      "name": "Cellar 2",
+      "imageKey": "cellar2"
+    },
+    {
+      "type": "Cellar3",
+      "name": "Cellar 3",
+      "imageKey": "cellar3"
+    },
+    {
+      "type": "Cellar4",
+      "name": "Cellar 4",
+      "imageKey": "cellar 4"
+    },
+    {
+      "type": "Claire_WarpRoom",
+      "name": "Claire's WarpRoom",
+      "imageKey": "claire_warproom"
+    },
+    {
+      "type": "Club",
+      "name": "Club",
+      "imageKey": "club"
+    },
+    {
+      "type": "CommunityCenter",
+      "name": "Community Center",
+      "imageKey": "community_center"
+    },
+    {
+      "type": "CrimsonBadlands",
+      "name": "Crimson Badlands",
+      "imageKey": "crimson_badlands"
+    },
+    {
+      "type": "Desert",
+      "name": "Desert",
+      "imageKey": "desert"
+    },
+    {
+      "type": "DesertRailway",
+      "name": "Desert Railway",
+      "imageKey": "desert_railway"
+    },
+    {
+      "type": "ElliottHouse",
+      "name": "Elliott's House",
+      "imageKey": "elliott_house"
+    },
+    {
+      "type": "FarmCave",
+      "name": "Farm Cave",
+      "imageKey": "farm_cave"
+    },
+    {
+      "type": "FishShop",
+      "name": "Fish Shop",
+      "imageKey": "fish_shop"
+    },
+    {
+      "type": "Forest",
+      "name": "Forest",
+      "imageKey": "forest"
+    },
+    {
+      "type": "ForestWest",
+      "name": "West Forest",
+      "imageKey": "forest_west"
+    },
+    {
+      "type": "Forest",
+      "name": "Forest",
+      "imageKey": "forest"
+    },
+    {
+      "type": "Greenhouse",
+      "name": "Greenhouse",
+      "imageKey": "greenhouse"
+    },
+    {
+      "type": "HaleyHouse",
+      "name": "Haley's House",
+      "imageKey": "haley_house"
+    },
+    {
+      "type": "HarveyRoom",
+      "name": "Harvey's Room",
+      "imageKey": "harvey_room"
+    },
+    {
+      "type": "Hospital",
+      "name": "Hospital",
+      "imageKey": "hospital"
+    },
+    {
+      "type": "IridiumQuarry",
+      "name": "Iridium Quarry",
+      "imageKey": "iridium_quarry"
+    },
+    {
+      "type": "Isaac_WarpRoom",
+      "name": "Isaac's WarpRoom",
+      "imageKey": "isaac_warproom"
+    },
+    {
+      "type": "IslandEast",
+      "name": "East Island",
+      "imageKey": "island"
+    },
+    {
+      "type": "IslandFarmCave",
+      "name": "Island Farm Cave",
+      "imageKey": "island_farm_cave"
+    },
+    {
+      "type": "IslandFarmHouse",
+      "name": "Island Farm House",
+      "imageKey": "island_farm_house"
+    },
+    {
+      "type": "IslandFieldOffice",
+      "name": "Island Field Office",
+      "imageKey": "island_field_office"
+    },
+    {
+      "type": "IslandHut",
+      "name": "Island Hut",
+      "imageKey": "island_hut"
+    },
+    {
+      "type": "Island North",
+      "name": "North Island",
+      "imageKey": "island"
+    },
+    {
+      "type": "IslandNorthCave1",
+      "name": "North Island Cave",
+      "imageKey": "island_north_cave"
+    },
+    {
+      "type": "IslandShrine",
+      "name": "Island Shrine",
+      "imageKey": "island_shrine"
+    },
+    {
+      "type": "IslandSouth",
+      "name": "South_Island",
+      "imageKey": "island"
+    },
+    {
+      "type": "IslandSouthEast",
+      "name": "South East Island",
+      "imageKey": "island"
+    },
+    {
+      "type": "IslandWest",
+      "name": "West Island",
+      "imageKey": "island"
+    },
+    {
+      "type": "IslandWestCave1",
+      "name": "West Island Cave",
+      "imageKey": "island_west_cave"
+    },
+    {
+      "type": "JenkinsHouse",
+      "name": "Jenkins' House",
+      "imageKey": "jenkins_house"
+    },
+    {
+      "type": "JojaMart",
+      "name": "Joja Mart",
+      "imageKey": "joja_mart"
+    },
+    {
+      "type": "JoshHouse",
+      "name": "Josh' House",
+      "imageKey": "josh_house"
+    },
+    {
+      "type": "LeahHouse",
+      "name": "Leah's House",
+      "imageKey": "leah_house"
+    },
+    {
+      "type": "LeoTreeHouse",
+      "name": "Leo's TreeHouse",
+      "imageKey": "leo_treehouse"
+    },
+    {
+      "type": "LostWoods",
+      "name": "Lost Woods",
+      "imageKey": "lost_woods"
+    },
+    {
+      "type": "ManorHouse",
+      "name": "Manor House",
+      "imageKey": "manor_house"
+    },
+    {
+      "type": "MarnieShed",
+      "name": "Marnie Shed",
+      "imageKey": "marnie_shed"
+    },
+    {
+      "type": "MermaidHouse",
+      "name": "Mermaid's House",
+      "imageKey": "mermaid_house"
+    },
+    {
+      "type": "Mine",
+      "name": "Mine",
+      "imageKey": "mine"
+    },
+    {
+      "type": "Morgan_WarpRoom",
+      "name": "Morgan's WarpRoom",
+      "imageKey": "morgan_warproom"
+    },
+    {
+      "type": "Mountain",
+      "name": "Mountain",
+      "imageKey": "mountain"
+    },
+    {
+      "type": "MovieTheater",
+      "name": "Movie Theater",
+      "imageKey": "movie_theater"
+    },
+    {
+      "type": "OliviaCellar",
+      "name": "Olivia's Cellar",
+      "imageKey": "olivia_cellar"
+    },
+    {
+      "type": "QiNutRoom",
+      "name": "Qi Nut's Room",
+      "imageKey": "qinut_room"
+    },
+    {
+      "type": "Railroad",
+      "name": "Railroad",
+      "imageKey": "railroad"
+    },
+    {
+      "type": "Saloon",
+      "name": "Saloon",
+      "imageKey": "saloon"
+    },
+    {
+      "type": "SamHouse",
+      "name": "Sam's House",
+      "imageKey": "sam_house"
+    },
+    {
+      "type": "SandyHouse",
+      "name": "Sandy's House",
+      "imageKey": "sandy_house"
+    },
+    {
+      "type": "Scarlett_WarpRoom",
+      "name": "Scarlett's WarpRoom",
+      "imageKey": "scarlett_warproom"
+    },
+    {
+      "type": "ScienceHouse",
+      "name": "Science House",
+      "imageKey": "science_house"
+    },
+    {
+      "type": "SebastianRoom",
+      "name": "Sebastian's Room",
+      "imageKey": "sebastian_room"
+    },
+    {
+      "type": "SeedShop",
+      "name": "Seed Shop",
+      "imageKey": "seed_shop"
+    },
+    {
+      "type": "Sewer",
+      "name": "Sewer",
+      "imageKey": "sewer"
+    },
+    {
+      "type": "ShearwaterBridge",
+      "name": "Shearwater Bridge",
+      "imageKey": "shearwater_bridge"
+    },
+    {
+      "type": "SkullCave",
+      "name": "Skull Cave",
+      "imageKey": "skull_cave"
+    },
+    {
+      "type": "SophiaHouse",
+      "name": "Sophia's House",
+      "imageKey": "sophia_house"
+    },
+    {
+      "type": "SophiasCellar",
+      "name": "Sophia's Cellar",
+      "imageKey": "sophia_cellar"
+    },
+    {
+      "type": "SpriteSpring",
+      "name": "Sprite Spring",
+      "imageKey": "sprite_spring"
+    },
+    {
+      "type": "StardustFarmPicture",
+      "name": "Stardust Farm Picture",
+      "imageKey": "stardust_farm_picture"
+    },
+    {
+      "type": "Submarine",
+      "name": "Submarine",
+      "imageKey": "submarine"
+    },
+    {
+      "type": "Summit",
+      "name": "Summit",
+      "imageKey": "summit"
+    },
+    {
+      "type": "Sunroom",
+      "name": "Sunroom",
+      "imageKey": "sunroom"
+    },
+    {
+      "type": "SusanHouse",
+      "name": "Susan's House",
+      "imageKey": "susan_house"
+    },
+    {
+      "type": "Tent",
+      "name": "Tent",
+      "imageKey": "tent"
+    },
+    {
+      "type": "Town",
+      "name": "Town",
+      "imageKey": "town"
+    },
+    {
+      "type": "TownEast",
+      "name": "East Town",
+      "imageKey": "town_east"
+    },
+    {
+      "type": "Trailer",
+      "name": "Trailer",
+      "imageKey": "trailer"
+    },
+    {
+      "type": "Trailer_Big",
+      "name": "Big Trailer",
+      "imageKey": "trailer_big"
+    },
+    {
+      "type": "TreasureCave",
+      "name": "Treasure Cave",
+      "imageKey": "treasure_cave"
+    },
+    {
+      "type": "Tunnel",
+      "name": "Tunnel",
+      "imageKey": "tunnel"
+    },
+    {
+      "type": "Void",
+      "name": "Void",
+      "imageKey": "void"
+    },
+    {
+      "type": "WitchHut",
+      "name": "Witch Hut",
+      "imageKey": "witch_hut"
+    },
+    {
+      "type": "WitchSwamp",
+      "name": "Witch Swamp",
+      "imageKey": "witch_swamp"
+    },
+    {
+      "type": "WitchWarpCave",
+      "name": "Witch Warp Cave",
+      "imageKey": "witch_warp_cave"
+    },
+    {
+      "type": "WitchHut",
+      "name": "Witch Hut",
+      "imageKey": "witch_hut"
+    },
+    {
+      "type": "WizardBasement",
+      "name": "Wizard's Basement",
+      "imageKey": "wizard_basement"
+    },
+    {
+      "type": "WizardHouse",
+      "name": "Wizard's House",
+      "imageKey": "wizard_house"
+    },
+    {
+      "type": "WizardHouseBasement",
+      "name": "Wizard House Basement",
+      "imageKey": "wizard_house_basement"
+    },
+    {
+      "type": "Woods",
+      "name": "Woods",
+      "imageKey": "woods"
     }
   ] 
 }

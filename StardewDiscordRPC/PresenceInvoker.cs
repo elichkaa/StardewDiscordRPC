@@ -1,10 +1,6 @@
 ﻿namespace StardewDiscordRPC
 {
-    using System;
-    using System.Linq;
     using DiscordRPC;
-    using Microsoft.Xna.Framework;
-    using StardewModdingAPI;
     using StardewModdingAPI.Events;
     using StardewValley;
 

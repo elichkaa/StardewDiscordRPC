@@ -31,15 +31,6 @@
             helper.Events.GameLoop.ReturnedToTitle += (sender, args) => invoker.SetInitial();
             helper.Events.GameLoop.SaveLoaded += (sender, args) =>
             {
-                var locations = Game1._locationLookup.Keys;
-                using (StreamWriter sw = File.CreateText("C:\\Users\\elidi\\Desktop\\locations.txt"))
-                {
-                    foreach (var location in locations)
-                    {
-                        sw.WriteLine(location);
-                    }
-                }
-                
                 invoker.SetLocationData("farms", Game1.getFarm().mapPath.ToString());
             };
 

@@ -56,7 +56,7 @@
             var data = jsonReader.GetLocationObject(locationType, locationName);
             if (data == null)
             {
-                this.SetBase($"Playing as {Game1.player.Name}", "cat", locationName, $"Visiting {locationName}", timestamps);
+                this.SetBase($"Playing as {Game1.player.Name}", "stardew_icon", locationName, $"Visiting {locationName}", timestamps);
             }
             string name = data?["name"].ToString();
             string image = data?["imageKey"].ToString();

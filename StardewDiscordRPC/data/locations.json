@@ -65,12 +65,12 @@
     {
       "type": "Apples_WarpRoom",
       "name": "Apple's Warp Room",
-      "imageKey": "apple_warproom"
+      "imageKey": "stardew_icon"
     },
     {
       "type": "ApplesRoom",
       "name": "Apple's Room",
-      "imageKey": "apple_room"
+      "imageKey": "stardew_icon"
     },
     {
       "type": "ArchaeologyHouse",
@@ -85,12 +85,7 @@
     {
       "type": "AuroraVineyardPicture",
       "name": "Aurora's Vineyard Picture",
-      "imageKey": "aurora_vineyard_picture"
-    },
-    {
-      "type": "Backwoods",
-      "name": "Backwoods",
-      "imageKey": "backwoods"
+      "imageKey": "aurora_vineyard"
     },
     {
       "type": "Backwoods",
@@ -100,12 +95,12 @@
     {
       "type": "BathHouse_Entry",
       "name": "Entry of BathHouse",
-      "imageKey": "bathhouse_entry"
+      "imageKey": "bathhouse"
     },
     {
       "type": "BathHouse_MensLocker",
       "name": "Men's Locker of BathHouse",
-      "imageKey": "bathhouse_menslocker"
+      "imageKey": "bathhouse_locker"
     },
     {
       "type": "BathHouse_Pool",
@@ -115,7 +110,7 @@
     {
       "type": "BathHouse_WomensLocker",
       "name": "Women's Locker of BathHouse",
-      "imageKey": "bathhouse_womenslocker"
+      "imageKey": "bathhouse_locker"
     },
     {
       "type": "Beach",
@@ -160,7 +155,7 @@
     {
       "type": "Camilla_WarpRoom",
       "name": "Camilla's WarpRoom",
-      "imageKey": "camilla_warproom"
+      "imageKey": "stardew_icon"
     },
     {
       "type": "Cellar",
@@ -170,17 +165,17 @@
     {
       "type": "Cellar2",
       "name": "Cellar 2",
-      "imageKey": "cellar2"
+      "imageKey": "cellar"
     },
     {
       "type": "Cellar3",
       "name": "Cellar 3",
-      "imageKey": "cellar3"
+      "imageKey": "cellar"
     },
     {
       "type": "Cellar4",
       "name": "Cellar 4",
-      "imageKey": "cellar 4"
+      "imageKey": "cellar"
     },
     {
       "type": "Claire_WarpRoom",
@@ -228,14 +223,9 @@
       "imageKey": "fish_shop"
     },
     {
-      "type": "Forest",
-      "name": "Forest",
-      "imageKey": "forest"
-    },
-    {
       "type": "ForestWest",
       "name": "West Forest",
-      "imageKey": "forest_west"
+      "imageKey": "forest"
     },
     {
       "type": "Forest",
@@ -249,7 +239,7 @@
     },
     {
       "type": "HaleyHouse",
-      "name": "Haley's House",
+      "name": "Haley and Emily's House",
       "imageKey": "haley_house"
     },
     {
@@ -270,22 +260,22 @@
     {
       "type": "Isaac_WarpRoom",
       "name": "Isaac's WarpRoom",
-      "imageKey": "isaac_warproom"
+      "imageKey": "stardew_icon"
     },
     {
       "type": "IslandEast",
       "name": "East Island",
-      "imageKey": "island"
+      "imageKey": "island_east"
     },
     {
       "type": "IslandFarmCave",
       "name": "Island Farm Cave",
-      "imageKey": "island_farm_cave"
+      "imageKey": "island_cave"
     },
     {
       "type": "IslandFarmHouse",
       "name": "Island Farm House",
-      "imageKey": "island_farm_house"
+      "imageKey": "island_farmhouse"
     },
     {
       "type": "IslandFieldOffice",
@@ -300,12 +290,12 @@
     {
       "type": "Island North",
       "name": "North Island",
-      "imageKey": "island"
+      "imageKey": "island_north"
     },
     {
       "type": "IslandNorthCave1",
       "name": "North Island Cave",
-      "imageKey": "island_north_cave"
+      "imageKey": "island_cave"
     },
     {
       "type": "IslandShrine",
@@ -315,22 +305,22 @@
     {
       "type": "IslandSouth",
       "name": "South_Island",
-      "imageKey": "island"
+      "imageKey": "island_south"
     },
     {
       "type": "IslandSouthEast",
       "name": "South East Island",
-      "imageKey": "island"
+      "imageKey": "island_south_east"
     },
     {
       "type": "IslandWest",
       "name": "West Island",
-      "imageKey": "island"
+      "imageKey": "island_west"
     },
     {
       "type": "IslandWestCave1",
       "name": "West Island Cave",
-      "imageKey": "island_west_cave"
+      "imageKey": "island_cave"
     },
     {
       "type": "JenkinsHouse",
@@ -344,7 +334,7 @@
     },
     {
       "type": "JoshHouse",
-      "name": "Josh' House",
+      "name": "Alex' House",
       "imageKey": "josh_house"
     },
     {
@@ -400,7 +390,7 @@
     {
       "type": "OliviaCellar",
       "name": "Olivia's Cellar",
-      "imageKey": "olivia_cellar"
+      "imageKey": "stardew_icon"
     },
     {
       "type": "QiNutRoom",
@@ -430,7 +420,7 @@
     {
       "type": "Scarlett_WarpRoom",
       "name": "Scarlett's WarpRoom",
-      "imageKey": "scarlett_warproom"
+      "imageKey": "stardew_icon"
     },
     {
       "type": "ScienceHouse",
@@ -465,12 +455,12 @@
     {
       "type": "SophiaHouse",
       "name": "Sophia's House",
-      "imageKey": "sophia_house"
+      "imageKey": "blue_moon_vineyard"
     },
     {
       "type": "SophiasCellar",
       "name": "Sophia's Cellar",
-      "imageKey": "sophia_cellar"
+      "imageKey": "stardew_icon"
     },
     {
       "type": "SpriteSpring",
@@ -480,7 +470,7 @@
     {
       "type": "StardustFarmPicture",
       "name": "Stardust Farm Picture",
-      "imageKey": "stardust_farm_picture"
+      "imageKey": "stardew_icon"
     },
     {
       "type": "Submarine",
@@ -525,7 +515,7 @@
     {
       "type": "Trailer_Big",
       "name": "Big Trailer",
-      "imageKey": "trailer_big"
+      "imageKey": "trailer"
     },
     {
       "type": "TreasureCave",
@@ -550,16 +540,11 @@
     {
       "type": "WitchSwamp",
       "name": "Witch Swamp",
-      "imageKey": "witch_swamp"
+      "imageKey": "witch_hut"
     },
     {
       "type": "WitchWarpCave",
       "name": "Witch Warp Cave",
-      "imageKey": "witch_warp_cave"
-    },
-    {
-      "type": "WitchHut",
-      "name": "Witch Hut",
       "imageKey": "witch_hut"
     },
     {
@@ -580,7 +565,7 @@
     {
       "type": "Woods",
       "name": "Woods",
-      "imageKey": "woods"
+      "imageKey": "forest"
     }
   ] 
 }

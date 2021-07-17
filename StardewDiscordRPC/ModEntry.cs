@@ -1,17 +1,10 @@
 ﻿namespace StardewDiscordRPC
 {
     using System.Collections.Generic;
-    using System.Diagnostics;
-    using System.IO;
-    using System.Linq;
-    using System.Runtime.InteropServices;
-    using System.Threading;
-    using System.Timers;
     using DiscordRPC;
     using StardewModdingAPI;
     using StardewModdingAPI.Events;
     using StardewValley;
-    using Timer = System.Timers.Timer;
 
     public class ModEntry : Mod
     {
@@ -30,7 +23,6 @@
         private DiscordRpcClient rpcClient;
         private PresenceInvoker invoker;
         private bool saveLoaded;
-        private ICollection<NPC> TalkedToToday = new List<NPC>();
         private JsonReader jsonReader = new JsonReader();
 
         public override void Entry(IModHelper helper)
@@ -40,6 +32,7 @@
             //core events
             helper.Events.GameLoop.GameLaunched += (sender, args) => invoker.SetInitial();
             helper.Events.GameLoop.ReturnedToTitle += (sender, args) => invoker.SetInitial();
+            helper.Events.GameLoop.Saved += (sender, args) => invoker.ClearTalkedTo();
             helper.Events.GameLoop.SaveLoaded += (sender, args) =>
             {
                 invoker.SetLocationData("farms", Game1.getFarm().mapPath.ToString());
@@ -48,35 +41,24 @@
             helper.Events.GameLoop.UpdateTicking += this.OnUpdateTicked;
 
             //location
+            //helper.Events.World.ObjectListChanged
             helper.Events.Player.Warped += (sender, args) => invoker.ChangeLocation(args);
+
+            //collection crops and minerals
+            //helper.Events.Player.InventoryChanged += (sender, args) => invoker.CollectItems(args);
         }
 
         private void OnUpdateTicked(object sender, UpdateTickingEventArgs e)
         {
             if (e.IsMultipleOf(60) && saveLoaded)
             {
-                var count = Game1.currentLocation.characters.Count;
-                if (count != 0)
+                if (Game1.currentLocation.characters.Count != 0)
                 {
-                    var npcs = Game1.currentLocation.characters;
-                    foreach (var npc in npcs)
-                    {
-                        var talkedTo = Game1.player.hasPlayerTalkedToNPC(npc.Name);
-                        if (talkedTo && !this.TalkedToToday.Contains(npc))
-                        {
-                            this.TalkedToToday.Add(npc);
-                            var obj = this.jsonReader.GetNpc(npc.Name);
-                            if (obj != null)
-                            {
-                                this.invoker.SetBase($"Talking to {obj?["name"]}", $"{obj?["image"]}", obj?["name"].ToString(), $"{Game1.currentLocation.Name}");
-                            }
-                            else
-                            {
-                                this.invoker.SetBase($"Talking to {npc.Name}", "cat", npc.Name, $"{Game1.currentLocation.Name}");
-                            }
-                        }
-                    }
+                    this.invoker.SetCommunication();
                 }
+                
+                var currentItem = Game1.player.CurrentItem;
+                Monitor.Log(currentItem.Name, LogLevel.Info);
             }
 
             if (e.IsMultipleOf(1500) && saveLoaded)

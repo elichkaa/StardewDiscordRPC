@@ -1,6 +1,7 @@
 ﻿namespace StardewDiscordRPC
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using DiscordRPC;
     using StardewModdingAPI;
@@ -13,7 +14,9 @@
         private static readonly string steamId = "413150";
         private DiscordRpcClient rpcClient;
         private Timestamps timestamps;
+        private int day;
         private JsonReader jsonReader;
+        private ICollection<NPC> TalkedToToday = new List<NPC>();
 
         public PresenceInvoker(DiscordRpcClient rpcClient)
         {
@@ -54,6 +57,11 @@
             });
         }
 
+        public void ClearTalkedTo()
+        {
+            this.TalkedToToday.Clear();
+        }
+
         public void SetLocationData(string locationType, string locationName)
         {
             var data = jsonReader.GetLocationObject(locationType, locationName);
@@ -83,6 +91,37 @@
             {
                 this.SetLocationData("other", location.Name);
             }
+        }
+
+        public void SetCommunication()
+        {
+            var count = Game1.currentLocation.characters.Count;
+            if (count != 0)
+            {
+                var npcs = Game1.currentLocation.characters;
+                foreach (var npc in npcs)
+                {
+                    var talkedTo = Game1.player.hasPlayerTalkedToNPC(npc.Name);
+                    if (talkedTo && !this.TalkedToToday.Contains(npc))
+                    {
+                        this.TalkedToToday.Add(npc);
+                        var obj = this.jsonReader.GetNpc(npc.Name);
+                        if (obj != null)
+                        {
+                            this.SetBase($"Talking to {obj?["name"]}", $"{obj?["image"]}", obj?["name"].ToString(), $"Visiting {Game1.currentLocation.Name}");
+                        }
+                        else
+                        {
+                            this.SetBase($"Talking to {npc.Name}", "stardew_icon", npc.Name, $"Visiting {Game1.currentLocation.Name}");
+                        }
+                    }
+                }
+            }
+        }
+
+        public void SetCurrentItem()
+        {
+            var currentItem = Game1.player.CurrentItem.GetType();
         }
     }
 }

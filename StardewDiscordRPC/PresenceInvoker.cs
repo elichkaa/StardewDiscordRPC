@@ -84,38 +84,5 @@
                 this.SetLocationData("other", location.Name);
             }
         }
-
-        public void SetCommunicationPresence(LevelChangedEventArgs args)
-        {
-            var npcs = args.Player.currentLocation.characters;
-            foreach (var npc in npcs)
-            {
-                var talked = args.Player.hasPlayerTalkedToNPC(npc.Name);
-                if (talked)
-                {
-                    this.SetBase(npc.Name, "cat", npc.Name, "", timestamps);
-                }
-            }
-        }
-
-        public void OnUpdateTicked(UpdateTickingEventArgs e)
-        {
-            if (e.IsMultipleOf(60))
-            {
-                var count = Game1.player.currentLocation.characters.Count;
-                if (count != 0)
-                {
-                    var npcs = Game1.player.currentLocation.characters.Select(x => x.Name);
-                    foreach (var npc in npcs)
-                    {
-                        var talkedTo = Game1.player.hasPlayerTalkedToNPC(npc);
-                        if (talkedTo)
-                        {
-                            this.SetBase($"Talking to: {npc}", "cat", npc, "djfsahk");
-                        }
-                    }
-                }
-            }
-        }
     }
 }

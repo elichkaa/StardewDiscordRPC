@@ -27,5 +27,23 @@
 
             return null;
         }
+
+        public Dictionary<string, object> GetNpc(string key)
+        {
+            string json = System.IO.File.ReadAllText($"{baseFilePath}" + "npcs.json");
+
+            var members = JArray.Parse(json);
+
+            foreach (var member in members)
+            {
+                if (member["key"].ToString() == key)
+                {
+                    var values = JObject.FromObject(member).ToObject<Dictionary<string, object>>();
+                    return values;
+                }
+            }
+
+            return null;
+        }
     }
 }

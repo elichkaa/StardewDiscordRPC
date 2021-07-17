@@ -31,6 +31,7 @@
         private PresenceInvoker invoker;
         private bool saveLoaded;
         private ICollection<NPC> TalkedToToday = new List<NPC>();
+        private JsonReader jsonReader = new JsonReader();
 
         public override void Entry(IModHelper helper)
         {
@@ -64,7 +65,15 @@
                         if (talkedTo && !this.TalkedToToday.Contains(npc))
                         {
                             this.TalkedToToday.Add(npc);
-                            this.invoker.SetBase($"Talking to: {npc.Name}", "cat", npc.Name, $"{Game1.currentLocation.Name}");
+                            var obj = this.jsonReader.GetNpc(npc.Name);
+                            if (obj != null)
+                            {
+                                this.invoker.SetBase($"Talking to {obj?["name"]}", $"{obj?["image"]}", obj?["name"].ToString(), $"{Game1.currentLocation.Name}");
+                            }
+                            else
+                            {
+                                this.invoker.SetBase($"Talking to {npc.Name}", "cat", npc.Name, $"{Game1.currentLocation.Name}");
+                            }
                         }
                     }
                 }

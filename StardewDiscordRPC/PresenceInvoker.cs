@@ -1,6 +1,9 @@
 ﻿namespace StardewDiscordRPC
 {
+    using System;
+    using System.Linq;
     using DiscordRPC;
+    using StardewModdingAPI;
     using StardewModdingAPI.Events;
     using StardewValley;
 
@@ -35,7 +38,7 @@
                 Timestamps = timestamps
             });
         }
-        
+
         public void SetInitial()
         {
             this.rpcClient.SetPresence(new RichPresence
@@ -67,6 +70,11 @@
         public void ChangeLocation(WarpedEventArgs args)
         {
             var location = args.NewLocation;
+            this.SetLocation(location);
+        }
+
+        public void SetLocation(GameLocation location)
+        {
             if (location.IsFarm)
             {
                 this.SetLocationData("farms", Game1.getFarm().mapPath.ToString());
@@ -74,6 +82,39 @@
             else
             {
                 this.SetLocationData("other", location.Name);
+            }
+        }
+
+        public void SetCommunicationPresence(LevelChangedEventArgs args)
+        {
+            var npcs = args.Player.currentLocation.characters;
+            foreach (var npc in npcs)
+            {
+                var talked = args.Player.hasPlayerTalkedToNPC(npc.Name);
+                if (talked)
+                {
+                    this.SetBase(npc.Name, "cat", npc.Name, "", timestamps);
+                }
+            }
+        }
+
+        public void OnUpdateTicked(UpdateTickingEventArgs e)
+        {
+            if (e.IsMultipleOf(60))
+            {
+                var count = Game1.player.currentLocation.characters.Count;
+                if (count != 0)
+                {
+                    var npcs = Game1.player.currentLocation.characters.Select(x => x.Name);
+                    foreach (var npc in npcs)
+                    {
+                        var talkedTo = Game1.player.hasPlayerTalkedToNPC(npc);
+                        if (talkedTo)
+                        {
+                            this.SetBase($"Talking to: {npc}", "cat", npc, "djfsahk");
+                        }
+                    }
+                }
             }
         }
     }

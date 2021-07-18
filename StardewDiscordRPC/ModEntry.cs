@@ -1,6 +1,5 @@
 ﻿namespace StardewDiscordRPC
 {
-    using System.Collections.Generic;
     using DiscordRPC;
     using StardewModdingAPI;
     using StardewModdingAPI.Events;
@@ -27,24 +26,28 @@
 
         public override void Entry(IModHelper helper)
         {
+            this.rpcClient = new DiscordRpcClient(applicationId, autoEvents: true);
             this.invoker = new PresenceInvoker(rpcClient);
 
             //core events
             helper.Events.GameLoop.GameLaunched += (sender, args) => invoker.SetInitial();
-            helper.Events.GameLoop.ReturnedToTitle += (sender, args) => invoker.SetInitial();
+            helper.Events.GameLoop.ReturnedToTitle += (sender, args) =>
+            {
+                invoker.SetInitial();
+                this.saveLoaded = false;
+            };
             helper.Events.GameLoop.Saved += (sender, args) => invoker.ClearTalkedTo();
             helper.Events.GameLoop.SaveLoaded += (sender, args) =>
             {
                 invoker.SetLocationData("farms", Game1.getFarm().mapPath.ToString());
                 this.saveLoaded = true;
-            };
+            }; 
             helper.Events.GameLoop.UpdateTicking += this.OnUpdateTicked;
 
             //location
-            //helper.Events.World.ObjectListChanged
             helper.Events.Player.Warped += (sender, args) => invoker.ChangeLocation(args);
 
-            //collection crops and minerals
+            //collecting crops and minerals
             //helper.Events.Player.InventoryChanged += (sender, args) => invoker.CollectItems(args);
         }
 
@@ -56,9 +59,13 @@
                 {
                     this.invoker.SetCommunication();
                 }
-                
-                var currentItem = Game1.player.CurrentItem;
-                Monitor.Log(currentItem.Name, LogLevel.Info);
+                else
+                {
+                    if (Game1.player.CurrentItem != null)
+                    {
+                        this.invoker.SetCurrentItem(Game1.player.CurrentItem);
+                    }
+                }
             }
 
             if (e.IsMultipleOf(1500) && saveLoaded)

@@ -1,0 +1,354 @@
+﻿{
+  "tools": [
+    {
+      "key": "Hoe",
+      "image": "hoe"
+    },
+    {
+      "key": "Copper Hoe",
+      "image": "hoe"
+    },
+    {
+      "key": "Steal Hoe",
+      "image": "hoe"
+    },
+    {
+      "key": "Gold Hoe",
+      "image": "hoe"
+    },
+    {
+      "key": "Iridium Hoe",
+      "image": "hoe"
+    },
+    {
+      "key": "Pickaxe",
+      "image": "pickaxe"
+    },
+    {
+      "key": "Copper Pickaxe",
+      "image": "pickaxe"
+    },
+    {
+      "key": "Steel Pickaxe",
+      "image": "pickaxe"
+    },
+    {
+      "key": "Gold Pickaxe",
+      "image": "pickaxe"
+    },
+    {
+      "key": "Iridium Pickaxe",
+      "image": "pickaxe"
+    },
+    {
+      "key": "Axe",
+      "image": "axe"
+    },
+    {
+      "key": "Copper Axe",
+      "image": "axe"
+    },
+    {
+      "key": "Steel Axe",
+      "image": "axe"
+    },
+    {
+      "key": "Gold Axe",
+      "image": "axe"
+    },
+    {
+      "key": "Iridium Axe",
+      "image": "axe"
+    },
+    {
+      "key": "Watering Can",
+      "image": "watering_can"
+    },
+    {
+      "key": "Copper Watering Can",
+      "image": "watering_can"
+    },
+    {
+      "key": "Steel Watering Can",
+      "image": "watering_can"
+    },
+    {
+      "key": "Gold Watering Can",
+      "image": "watering_can"
+    },
+    {
+      "key": "Iridium Watering Can",
+      "image": "watering_can"
+    },
+    {
+      "key": "Trash Can",
+      "image": "trash_can"
+    },
+    {
+      "key": "Copper Trash Can",
+      "image": "trash_can"
+    },
+    {
+      "key": "Steel Trash Can",
+      "image": "trash_can"
+    },
+    {
+      "key": "Gold Trash Can",
+      "image": "trash_can"
+    },
+    {
+      "key": "Iridium Trash Can",
+      "image": "trash_can"
+    },
+    {
+      "key": "Training Rod",
+      "image": "rod"
+    },
+    {
+      "key": "Bamboo Pole",
+      "image": "rod"
+    },
+    {
+      "key": "Fiberglass Rod",
+      "image": "rod"
+    },
+    {
+      "key": "Iridium Rod",
+      "image": "rod"
+    },
+    {
+      "key": "Scythe",
+      "image": "scythe"
+    },
+    {
+      "key": "Golden Scythe",
+      "image": "scythe"
+    },
+    {
+      "key": "Shears",
+      "image": "shears"
+    },
+    {
+      "key": "Master slingshot",
+      "image": "slingshot"
+    },
+    {
+      "key": "Galaxy Slingshot",
+      "image": "slingshot"
+    },
+    {
+      "key": "Slingshot",
+      "image": "slingshot"
+    }
+  ],
+  "weapons": [
+    {
+      "key": "Rusty Sword",
+      "image": "sword"
+    },
+    {
+      "key": "Steel Smallsword",
+      "image": "sword"
+    },
+    {
+      "key": "Wooden Blade",
+      "image": "sword"
+    },
+    {
+      "key": "Pirate's Sword",
+      "image": "pirates_sword"
+    },
+    {
+      "key": "Silver Saber",
+      "image": "sword"
+    },
+    {
+      "key": "Cutlass",
+      "image": "sword"
+    },
+    {
+      "key": "Forest Sword",
+      "image": "forest_sword"
+    },
+    {
+      "key": "Iron Edge",
+      "image": "sword"
+    },
+    {
+      "key": "Insect Head",
+      "image": "sword"
+    },
+    {
+      "key": "Bone Sword",
+      "image": "bone_sword"
+    },
+    {
+      "key": "Claymore",
+      "image": "claymore"
+    },
+    {
+      "key": "Neptune's Glaive",
+      "image": "neptunes_glaive"
+    },
+    {
+      "key": "Templar's Blade",
+      "image": "sword"
+    },
+    {
+      "key": "Obsidian Edge",
+      "image": "obsidian_edge"
+    },
+    {
+      "key": "Ossified Blade",
+      "image": "ossfied_blade"
+    },
+    {
+      "key": "Tempered Broadsword",
+      "image": "tempered_broadsword"
+    },
+    {
+      "key": "Yeti Tooth",
+      "image": "sword"
+    },
+    {
+      "key": "Steel Falchion",
+      "image": "sword"
+    },
+    {
+      "key": "Dark Sword",
+      "image": "dark_sword"
+    },
+    {
+      "key": "Lava Katana",
+      "image": "lava_katana"
+    },
+    {
+      "key": "Dragontooth Cutlass",
+      "image": "dragontooth_cutlass"
+    },
+    {
+      "key": "Dwarf Sword",
+      "image": "dwarf_sword"
+    },
+    {
+      "key": "Galaxy Sword",
+      "image": "galaxy"
+    },
+    {
+      "key": "Tempered Galaxy Sword",
+      "image": "galaxy"
+    },
+    {
+      "key": "Infinity Blade",
+      "image": "infinity_blade"
+    },
+    {
+      "key": "Carving Knife",
+      "image": "carving_knife"
+    },
+    {
+      "key": "Iron Dirk",
+      "image": "dagger"
+    },
+    {
+      "key": "Wind Spire",
+      "image": "dagger"
+    },
+    {
+      "key": "Elf Blade",
+      "image": "elf_blade"
+    },
+    {
+      "key": "Burglar's Shank",
+      "image": "dagger"
+    },
+    {
+      "key": "Crystal Dagger",
+      "image": "dagger"
+    },
+    {
+      "key": "Shadow Dagger",
+      "image": "shadow_dagger"
+    },
+    {
+      "key": "Broken Trident",
+      "image": "broken_trident"
+    },
+    {
+      "key": "Wicked Kris",
+      "image": "wicked_kris"
+    },
+    {
+      "key": "Galaxy Dagger",
+      "image": "galaxy"
+    },
+    {
+      "key": "Tempered Galaxy Dagger",
+      "image": "galaxy"
+    },
+    {
+      "key": "Dwarf Dagger",
+      "image": "dwarf_dagger"
+    },
+    {
+      "key": "Dragontooth Shiv",
+      "image": "dragontooth_shiv"
+    },
+    {
+      "key": "Iridium Needle",
+      "image": "iridium_needle"
+    },
+    {
+      "key": "Infinity Dagger",
+      "image": "infinity_dagger"
+    },
+    {
+      "key": "Femur",
+      "image": "femur"
+    },
+    {
+      "key": "Wood Club",
+      "image": "forest_sword"
+    },
+    {
+      "key": "Wood Mallet",
+      "image": "forest_sword"
+    },
+    {
+      "key": "Lead Rod",
+      "image": "lead_rod"
+    },
+    {
+      "key": "Kudgel",
+      "image": "kudgel"
+    },
+    {
+      "key": "The Slammer",
+      "image": "the_slammer"
+    },
+    {
+      "key": "Galaxy Hammer",
+      "image": "galaxy_hammer"
+    },
+    {
+      "key": "Tempered Galaxy Hammer",
+      "image": "galaxy_hammer"
+    },
+    {
+      "key": "Dwarf Hammer",
+      "image": "dwarf_hammer"
+    },
+    {
+      "key": "Dragontooth Club",
+      "image": "dragontooth_club"
+    },
+    {
+      "key": "Infinity Gavel",
+      "image": "infinity_gavel"
+    },
+    {
+      "key": "Holy Blade",
+      "image": "ossfied_blade"
+    }
+  ]
+}

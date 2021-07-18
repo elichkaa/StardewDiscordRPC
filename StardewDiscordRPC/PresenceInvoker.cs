@@ -20,7 +20,7 @@
 
         public PresenceInvoker(DiscordRpcClient rpcClient)
         {
-            this.rpcClient = new DiscordRpcClient(applicationId, autoEvents: true);
+            this.rpcClient = rpcClient;
             this.rpcClient.RegisterUriScheme(steamId);
             this.rpcClient.Initialize();
             this.jsonReader = new JsonReader();
@@ -40,6 +40,10 @@
                 State = state,
                 Timestamps = timestamps
             });
+            if (Game1.player.CurrentItem != null)
+            {
+                this.SetCurrentItem(Game1.player.CurrentItem);
+            }
         }
 
         public void SetInitial()
@@ -119,9 +123,19 @@
             }
         }
 
-        public void SetCurrentItem()
+        public void SetCurrentItem(Item item)
         {
-            var currentItem = Game1.player.CurrentItem.GetType();
+            if (item.Category == -99)
+            {
+                var data = this.jsonReader.GetToolOrWeapon("tools", item.Name);
+                this.rpcClient.UpdateSmallAsset(data?["image"].ToString(), data?["key"].ToString());
+            }
+            else if (item.Category == -98)
+            {
+                var data = this.jsonReader.GetToolOrWeapon("weapons", item.Name);
+                this.rpcClient.UpdateSmallAsset(data?["image"].ToString(), data?["key"].ToString());
+            }
+            //this.rpcClient.UpdateDetails(item.Category.ToString());
         }
     }
 }

@@ -19,7 +19,7 @@
     <None Update="data\locations.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="data\player.json">
+    <None Update="data\toolsAndWeapons.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="stardew_icon.png">
